@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <h1 id="situation">Hello</h1>
+    <div id="board">
+
+    </div>
+
+    <p></p>
+    <button onclick="parti()">참가</button>
+    <button onclick="unParti()">관전</button>
+
+    <div class="users">
+        <div class="userList">
+            <p>userlist</p>
+            <hr>
+            <div class="wrapList" id="user">
+                <ul id="userList">
+                    <li>players</li>
+                    <ol id="players">
+                        <li id="1p"></li>
+                        <li id="2p"></li>
+                    </ol>
+                    <li>observers</li>
+                    <ul id="observers"></ul>
+                </ul>
+            </div>
+            
+        </div>
+        <div class="chat">
+            <p>chat</p>
+            <hr>
+            <div class="wrapList" id="chat">
+                <ul id="chatList"></ul>
+            </div>
+            <div id="inputChat">
+                <div id="container">
+                    <input id="input" type="text">
+                    <button onclick="chatting()">send</button>
+                </div>
+            </div>
+        </div>
+
+        
+    </div>
+
+    
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="./js/client.js"></script>
+</body>
+</html>
