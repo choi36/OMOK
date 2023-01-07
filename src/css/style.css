@@ -12,11 +12,6 @@ ul {
     padding-left: 10px;
 }
 
-#container {
-    display: grid;
-    grid-template-columns: 1fr 60px;
-}
-
 .column {
     height: 25px;
     margin: 0;
@@ -26,12 +21,12 @@ ul {
     margin: 0;
 }
 
-.users, .chat, .userList {
+.bottom, .chat, .userList {
     border: 2px solid antiquewhite;
     box-sizing: border-box;
 }
 
-.users {
+.bottom {
     width: 100%;
     height: calc(100vh - 620px);
 
@@ -48,7 +43,7 @@ ul {
     
 }
 
-.wrapList {
+.wrap {
     overflow-y: scroll;
     position: relative;
     margin: 0;
@@ -79,9 +74,11 @@ ul {
     bottom: 0px;
     box-sizing: border-box;
     padding-right: 8px;
+    display: grid;
+    grid-template-columns: 1fr 60px;
 }
 
-#container > input {
+#inputChat > input {
     margin: 8px;
     border-radius: 32px;
 }
